@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "WexNetAdapter.h"
 
-static NSString * const kHomeRequestKey;
-static NSString * const kLoginRequestKey;
+extern NSString * const kHomeRequestKey;
+extern NSString * const kLoginRequestKey;
 
 /// 网络访问适配器工厂
 @interface WexNetAdapterFactory : NSObject

@@ -601,12 +601,12 @@
 		F8F1B1AC1E2DAA860005D37D /* Weicaifu_MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				F8A314361E4D5E79003B6096 /* Master */,
 				F8A3143F1E4D5E79003B6096 /* Model */,
-				F8A314301E4D5E79003B6096 /* DataController */,
 				F8A314461E4D5E79003B6096 /* View */,
 				F8A3144E1E4D5E79003B6096 /* ViewModel */,
+				F8A314301E4D5E79003B6096 /* DataController */,
 				F8A314481E4D5E79003B6096 /* ViewController */,
+				F8A314361E4D5E79003B6096 /* Master */,
 			);
 			path = Weicaifu_MVVM;
 			sourceTree = "<group>";

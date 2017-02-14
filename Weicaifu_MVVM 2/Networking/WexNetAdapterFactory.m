@@ -10,8 +10,8 @@
 #import "WexNetAdapter.h"
 
 
-static NSString * const kHomeRequestKey = @"kHomeRequestKey";
-static NSString * const kLoginRequestKey = @"kLoginRequestKey";
+NSString * const kHomeRequestKey = @"kHomeRequestKey";
+NSString * const kLoginRequestKey = @"kLoginRequestKey";
 
 
 
@@ -50,7 +50,6 @@ static NSString * const kLoginRequestKey = @"kLoginRequestKey";
     return @{
              kHomeRequestKey : @"/asset/overview",
              kLoginRequestKey : @"/login/do",
-             
              };
 }
 

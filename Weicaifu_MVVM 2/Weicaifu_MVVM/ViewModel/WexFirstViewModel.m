@@ -15,6 +15,8 @@
 
 @end
 
+
+// 主要负责页面的业务逻辑。
 @implementation WexFirstViewModel
 
 @dynamic delegate;
@@ -25,10 +27,9 @@
     
     [self showWaitHUD];
     
-    [self.delegate
-     firstViewModel:self
-     loadDataWithIndex:self.data.index + 1
-     complete:^(WexMessageEntity *data, NSError *error) {
+    // 页面加载的时候取得页面需要的数据
+    
+    [self.delegate firstViewModel:self loadDataWithIndex:self.data.index + 1 complete:^(WexMessageEntity *data, NSError *error) {
          
          if (data && !error) {
              [self showSuccessHUDWithStatus:@"成功"];

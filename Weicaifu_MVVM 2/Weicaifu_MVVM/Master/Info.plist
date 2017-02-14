@@ -39,7 +39,7 @@
 	<key>WexServiceDevelopName</key>
 	<string>http://xfp.pythia.com/a</string>
 	<key>WexServiceDistributeName</key>
-	<string>http://xfp.pythia.com/a</string>
+	<string>https://m.baidu.com</string>
 	<key>WexServiceTestName</key>
 	<string>http://xfp.pythia.com/a</string>
 </dict>

@@ -32,11 +32,11 @@
         testEntity.title = [NSString stringWithFormat:@"第%lu页", index];
         testEntity.nextTitle = [NSString stringWithFormat:@"第%lu页", index + 1];
         
-        success(testEntity);
+        // success(testEntity);
     } failure:^(WexNetResponseHead *head) {
         
         NSError *error = head.error;
-        failure(error);
+        // failure(error);
     }];
     
     

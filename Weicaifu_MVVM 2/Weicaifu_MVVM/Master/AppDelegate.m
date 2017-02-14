@@ -27,7 +27,28 @@
     self.rootViewModel = [[WexFirstViewModel alloc] init];
     self.window.rootViewController = [self.rootViewModel makeRootViewContorller];
     [self.window makeKeyAndVisible];
+    
+    
+    // 获取数据
+    [self getRemoteDataWithCallBack:^(NSObject *data) {
+        
+        NSString *str = (NSString *)data;
+        printf("%s", [str UTF8String]); // print result is "返回的数据"
+    }];
+    
     return YES;
+}
+
+
+- (void)getRemoteDataWithCallBack:(void(^)(NSObject *data))callBack {
+    
+    // 1、取得数据
+    // ...
+    
+    // 2、回调传入数据
+    if (callBack != NULL) {
+        callBack(@"返回的数据");
+    }
 }
 
 

@@ -423,8 +423,6 @@
 // 当前URL
 + (NSString *)defaultRequestURLString {
     
-    return @"https://m.weicaifu.com";
-    
     NSMutableString* url = nil;
 #if WEX_TEST_SERVER == 1 // 测试环境
     url = [[NSMutableString alloc] initWithString:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"WexServiceTestName"]];
